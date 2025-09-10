@@ -1,0 +1,194 @@
+/* ====== ELEGANT COLOR SCHEME: Navy Blue, Gold, White ====== */
+:root {
+    --navy: #0A1A2F;
+    --gold: #D4AF37;
+    --light-gold: #F1E5AC;
+    --white: #FFFFFF;
+    --light-bg: #F8F9FA;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    background-color: var(--light-bg);
+}
+
+/* ====== HEADER ====== */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 80px;
+    background-color: var(--navy);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#header img {
+    display: block;
+    margin: auto;
+    height: 60%;
+    padding-top: 20px;
+}
+
+/* ====== TOP NAVIGATION TABS ====== */
+#tabs-top {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: var(--gold);
+}
+
+#tabs-top a {
+    float: left;
+    display: block;
+    width: 25%;
+    height: 35px;
+    font-weight: 700;
+    color: var(--navy);
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+/* ====== MAIN CONTENT AREA ====== */
+#main {
+    margin-top: 120px;
+    padding-bottom: 40px;
+}
+
+#content {
+    padding: 20px 10px 60px 10px;
+}
+
+/* ====== BOTTOM NAVIGATION TABS ====== */
+#tabs-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: var(--navy);
+}
+
+#tabs-bottom a {
+    float: left;
+    display: block;
+    width: 33.33%;
+    height: 35px;
+    font-weight: 700;
+    color: var(--gold);
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+/* ====== INFO BOXES (for shops, movies, etc.) ====== */
+.info-box {
+    text-decoration: none;
+    background: var(--white);
+    width: 90%;
+    display: block;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--gold);
+}
+
+.info-box img {
+    height: 70px;
+    margin-right: 15px;
+    float: left;
+}
+
+.info-box h3 {
+    margin: 0;
+    color: var(--navy);
+}
+
+.info-box p {
+    margin: 5px 0 0 0;
+    color: #666;
+}
+
+.info-box img.right {
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+}
+
+/* ====== FULL INFO PAGES (for individual shop/movie pages) ====== */
+#info-box-full {
+    background-color: var(--white);
+    width: 90%;
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#info-box-full img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#info-box-full h3 {
+    text-align: center;
+    color: var(--navy);
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 10px;
+}
+
+/* ====== FORM STYLES ====== */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button {
+    display: block;
+    background-color: var(--gold);
+    color: var(--navy);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    margin: 15px 0;
+    padding: 12px 0;
+    border-radius: 4px;
+}
+
+/* ====== MOVIE LISTINGS ====== */
+.movie-box {
+    background: var(--white);
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.movie-box img {
+    width: 100px;
+    float: left;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+/* ====== CATEGORY HEADERS ====== */
+.category-title {
+    color: var(--navy);
+    margin: 20px 0 10px 0;
+    padding-left: 5%;
+    border-left: 4px solid var(--gold);
+}
